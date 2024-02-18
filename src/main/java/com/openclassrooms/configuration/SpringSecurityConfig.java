@@ -24,7 +24,7 @@ import com.nimbusds.jose.jwk.source.ImmutableSecret;
 @Configuration
 public class SpringSecurityConfig {
 
-	private String jwtKey = "toupdate.....";
+	private String jwtKey = "sÓ=Å8GºdôwH]ï\\râÀß¾µLdurà¾qr";
 
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -37,6 +37,7 @@ public class SpringSecurityConfig {
 
 	@Bean
 	public JwtEncoder jwtEncoder() {
+		System.out.println(jwtKey.getBytes().length);
 		return new NimbusJwtEncoder(new ImmutableSecret<>(this.jwtKey.getBytes()));
 	}
 
