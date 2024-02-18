@@ -48,7 +48,7 @@ public class SpringSecurityConfig {
 
 	@Bean
 	public UserDetailsService users() {
-		UserDetails user = User.builder().username("user").password(passwordEncoder().encode("password")).roles("USER")
+		UserDetails user = User.builder().username("user").password(passwordEncoder().encode("root")).roles("USER")
 				.build();
 		return new InMemoryUserDetailsManager(user);
 	}

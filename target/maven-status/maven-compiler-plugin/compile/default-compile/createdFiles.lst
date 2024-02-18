@@ -1,0 +1,5 @@
+com\openclassrooms\controllers\ResourceController.class
+com\openclassrooms\SpringSecurityAuthApplication.class
+com\openclassrooms\controllers\LoginController.class
+com\openclassrooms\configuration\SpringSecurityConfig.class
+com\openclassrooms\services\JWTService.class
